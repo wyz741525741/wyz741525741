@@ -1,0 +1,517 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>关于MAN.B&amp;W-ME-C电喷主机运行过程中的管理要点及心得 | DMDUSK</title><meta name="author" content="旦暮灯"><meta name="copyright" content="旦暮灯"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="原作者：徐文彬轮机长随着IMO日益严苛的船舶排放标准的实施，加上当前全球经济下行压力增大和国际油价的不稳定性及船舶的超大型化趋势。良好的动力性，低油耗，低排放是船东对新造船舶的动力推进系统提出的突出要求。基于此，ME-C电喷主机在当今航运市场中有逐步取代传统的MC-C主机作为船舶推进系统的趋势。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于MAN.B&amp;W-ME-C电喷主机运行过程中的管理要点及心得">
+<meta property="og:url" content="https://dmdusk.com/posts/2874389552.html">
+<meta property="og:site_name" content="DMDUSK">
+<meta property="og:description" content="原作者：徐文彬轮机长随着IMO日益严苛的船舶排放标准的实施，加上当前全球经济下行压力增大和国际油价的不稳定性及船舶的超大型化趋势。良好的动力性，低油耗，低排放是船东对新造船舶的动力推进系统提出的突出要求。基于此，ME-C电喷主机在当今航运市场中有逐步取代传统的MC-C主机作为船舶推进系统的趋势。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2019/07/18/5d2f5d526bd7690858.gif">
+<meta property="article:published_time" content="2019-03-18T19:50:12.000Z">
+<meta property="article:modified_time" content="2021-01-17T12:02:00.000Z">
+<meta property="article:author" content="旦暮灯">
+<meta property="article:tag" content="MAN.B&amp;W-7S70ME-C8.2">
+<meta property="article:tag" content="电喷主机">
+<meta property="article:tag" content="管理心得">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2019/07/18/5d2f5d526bd7690858.gif"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "关于MAN.B&W-ME-C电喷主机运行过程中的管理要点及心得",
+  "url": "https://dmdusk.com/posts/2874389552.html",
+  "image": "https://i.loli.net/2019/07/18/5d2f5d526bd7690858.gif",
+  "datePublished": "2019-03-18T19:50:12.000Z",
+  "dateModified": "2021-01-17T12:02:00.000Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "旦暮灯",
+      "url": "https://dmdusk.com/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/icon.png"><link rel="canonical" href="https://dmdusk.com/posts/2874389552.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/img/pwa/manifest.json"/><link rel="apple-touch-icon" sizes="180x180" href="/img/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/pwa/32.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/img/pwa/16.png"/><link rel="mask-icon" href="/img/pwa/favicon.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '关于MAN.B&W-ME-C电喷主机运行过程中的管理要点及心得',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">72</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/word/"><i class="fa-fw fas fa-bookmark"></i><span> 摘抄</span></a></div><div class="menus_item"><a class="site-page" href="/cloud/"><i class="fa-fw fas fa-database"></i><span> 分享</span></a></div><div class="menus_item"><a class="site-page" href="/talk/"><i class="fa-fw fas fa-thumbtack"></i><span> 留言</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 博主</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://i.loli.net/2019/07/18/5d2f5d526bd7690858.gif);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">DMDUSK</span></a><a class="nav-page-title" href="/"><span class="site-name">关于MAN.B&amp;W-ME-C电喷主机运行过程中的管理要点及心得</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/word/"><i class="fa-fw fas fa-bookmark"></i><span> 摘抄</span></a></div><div class="menus_item"><a class="site-page" href="/cloud/"><i class="fa-fw fas fa-database"></i><span> 分享</span></a></div><div class="menus_item"><a class="site-page" href="/talk/"><i class="fa-fw fas fa-thumbtack"></i><span> 留言</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 博主</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">关于MAN.B&amp;W-ME-C电喷主机运行过程中的管理要点及心得</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-03-18T19:50:12.000Z" title="发表于 2019-03-19 03:50:12">2019-03-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-17T12:02:00.000Z" title="更新于 2021-01-17 20:02:00">2021-01-17</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%BD%AE%E6%9C%BA%E7%9B%B8%E5%85%B3/">轮机相关</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><blockquote>
+<p>原作者：徐文彬轮机长<br>随着IMO日益严苛的船舶排放标准的实施，加上当前全球经济下行压力增大和国际油价的不稳定性及船舶的超大型化趋势。良好的动力性，低油耗，低排放是船东对新造船舶的动力推进系统提出的突出要求。<br>基于此，ME-C电喷主机在当今航运市场中有逐步取代传统的MC-C主机作为船舶推进系统的趋势。<span id="more"></span></p>
+</blockquote>
+<ul>
+<li><strong>究其原因，不外乎是ME-C电喷主机具备以下主要优点：</strong><ul>
+<li>高度智能化的电子控制系统。</li>
+<li>超低的SFOC,良好的经济性能</li>
+<li>动力性好，节能减排。</li>
+<li>低负荷燃烧下，依然能保持无烟操作且能保持超低转速运行。RPM低至15左右。</li>
+<li>各种负荷下，燃油喷射压力和喷射率均可优化。</li>
+<li>用于控制燃油喷射，排气阀开关和HPS,HCU,CCU,EICU等各类软件均可以升级优化。</li>
+</ul>
+</li>
+</ul>
+<p>但是，MAN B&amp;W ME-C电喷主机作为当前最先进的主机类型之一，对轮机员的管理能力提出了新的挑战和考验。本文以笔者曾经工作过的MAN B&amp;W 7S70ME-C8.2机型为例，浅谈ME-C电喷主机在运行过程中的一些管理要点和心得。</p>
+<h2 id="一、ME-C电喷主机超低速运行（Super-Slow-Steaming）的注意事项"><a href="#一、ME-C电喷主机超低速运行（Super-Slow-Steaming）的注意事项" class="headerlink" title="一、ME-C电喷主机超低速运行（Super Slow Steaming）的注意事项"></a><strong>一、ME-C电喷主机超低速运行（Super Slow Steaming）的注意事项</strong></h2><blockquote>
+<p>当前全球经济低迷，航运市场极度不景气使得各大船东在削减运营成本上大做文章。燃油消耗作为航运业最大的运营成本，降低油耗自然是首当其冲。在这个大背景下，大多数船东都要求旗下船舶进行超低速运行<code>（主机发出的概率Power&lt;25% MCR，甚至低至18%-20% MCR）</code>，增加运货周期以达到削减运营成本的目的。</p>
+</blockquote>
+<p><strong>那么，长期Super Slow Steaming对于ME-C型电喷主机有何影响，在管理上又该注意哪些问题呢？</strong></p>
+<ol>
+<li>长期的Super Slow Steaming将导致扫气箱和活塞环脏污，排气阀积碳速度明显快于高负荷运行时，应缩短扫气箱清洁周期并经常进行扫气口检查以确定活塞环和缸套的状况。若发现喷油嘴和活塞头结碳严重，有烧蚀的迹象应及时处理更换。建议必须增加燃油系统如Fuel Injector、Fuel Pressure Booster密封圈、活塞环等常用损耗件的库存。另外 ，应尽量申请一套鼓风机总成（Aux Blower Full Set Including Motor）放在船上作为备用。</li>
+<li>主机在超低速运行时，排气温度下降。必将使废气锅炉的产汽量下降。此时应尽量减少不必要的蒸汽加热，如燃油粘度无法保持，应启动辅锅炉提升蒸汽压力。 </li>
+<li>超低速运行使增压器效率低下并引起涡轮侧快速脏污。应增加涡轮侧干洗的频率，清除污垢</li>
+<li>考虑到扫气压力下降，辅助鼓风机一定要伴随主机长期运行。轮机员应密切关注鼓风机的电流，轴承温度，扫气压力。应在轴承注油孔加入抗高温的牛油脂并避免在自动模式下风机频繁启停，对马达造成伤害。</li>
+<li>ME-C型电喷主机的缸套冷却水的出口温度尽量保持在靠近上限，并增加缸套冷却水的压力以降低冷腐蚀的可能性。 </li>
+<li>值得一提的是，应每隔2-3天对主机进行加速一次（Run-up），加速减速的过程应做到缓慢有序。非紧急情况下，禁止快速大幅度改变主机负荷。待增压器转速上升到一定时，干洗透平端（T&#x2F;C Turbine Side Dry Washing）以减少灰分的排出和沉积。同时，对废气锅炉进行化学品或蒸汽吹灰，即可降低主机的排气背压又可防止烟囱冒火星。</li>
+</ol>
+<p><strong>总而言之，主机在超低速运转时，应加大维护保养力度，改善燃烧品质。如有必要，缩短排气阀Overhaul 周期和吊缸周期。视情缩短喷油器喷油压力的测试周期，还要定期清洗空冷器的空气端。轮机员要密切关注气缸注油率应处在最佳状态。</strong></p>
+<p>以笔者曾经工作过的一条3600 TEU的集装箱船为例，机型：<strong>MAN B&amp;W 7S70ME-C</strong>. 应租家要求，主机降速运转在20%MCR的转速（RPM&#x3D;55），但在采取上述六点的注意事项后，并没有产生任何问题，在技术层面上也没有遇到大的挑战，很好的达到了租家的降速要求。</p>
+<h2 id="二、动力液压油供给系统（Hydraulic-Power-Supply）"><a href="#二、动力液压油供给系统（Hydraulic-Power-Supply）" class="headerlink" title="二、动力液压油供给系统（Hydraulic Power Supply）"></a><strong>二、动力液压油供给系统（Hydraulic Power Supply）</strong></h2><blockquote>
+<p>HPS提供的20 Mpa左右（随机型而异，有的机型为30 Mpa）的动力液压油作为驱动排气阀和燃油增压泵的’’液压凸轮”，HPS被称作为ME-C电喷主机的“心脏”部位一点也不为过。对其进行专业性的维护保养就显得尤为重要。 HPS的组成大致有：Filter Unit，Start-up Pumps，Engine Driven Pumps and its Driving system，Valve block等。</p>
+</blockquote>
+<p><strong>由于ME-C电喷主机采用系统润滑油作为HPS的液压油，必须定期对Filter Unit只有6μ的主滤芯进行清洁保养，以超声波清洁仪对其进行彻底清洁为佳。做到严格控制主机油底壳中的含水量（Water Content&lt;1%），每三个月对滑油进行一次送岸做实验室理化分析。</strong> </p>
+<ol>
+<li><p>关于Engine Driven Pump Inlet Lub. Oil Pressure Sensor，不少轮机员误以为其存在的意义仅仅类似于安装在主机其它部位普通的Sensor。该Sensor有两个主要的作用：</p>
+<ul>
+<li>防止轮机员在对HPS进行维护保养后，忘记开启Engine Driven Pump的Inlet Valve,从而导致液压泵的干转而使液压泵产生毁灭性的损坏； </li>
+<li>Engine Driven Pump进口油压是三个Inlet Sensor的平均压力，当某Sensor或主机系统滑油泵发生故障时，进口油压必定产生相应变化，当油压低至0.7 Bar的报警值时，将发出声光报警。当压力持续降低至0.5 Bar时，主机将Shut Down而且是Non-cancel able。<strong>在主机航行过程中，建议该Sensor必须持有1-2个备件。</strong></li>
+</ul>
+</li>
+<li><p>定期对HPS系统管路的Leak Detector进行测试并定期清洁Waste Oil Collecting Box。不少轮机员认为该Leak Detector仅仅只会产生报警，其实当Waste Oil Collecting Box液位上升到一定高位时，主机将发出可以取消的安全保护停车，即Cancel able Shut Down。 </p>
+</li>
+<li><p>定期对HPS和HCU系统的蓄压器 （Accumulator）进行压力测试以保证其处于最佳工作状态。蓄压器的压力太高或太低将导致膜片（Membrane）的破裂，从而进一步导致处于膜片（Membrane）中心位置的小圆盘（Disc）撞击蓄压器（Accumulator）的壳体（Steel Housing）。值得强调的是，在进行压力测试时，必须考虑温度因素。考虑到极微量的N2泄漏是不可避免的，经验认为蓄压器（Accumulator）压力每月下降2-5 Bar是正常的。建议每4个月进行一次加充N2.</p>
+</li>
+</ol>
+<h2 id="三、液压汽缸单元-（Hydraulic-Cylinder-Unit）"><a href="#三、液压汽缸单元-（Hydraulic-Cylinder-Unit）" class="headerlink" title="三、液压汽缸单元 （Hydraulic Cylinder Unit）"></a><strong>三、液压汽缸单元 （Hydraulic Cylinder Unit）</strong></h2><blockquote>
+<p>HCU包含Distribution Block,FIVA, Accumulator, Cylinder Lubricator and High Pressure Pipes等。FIVA（Fuel Injection &amp; Valve Actuation）作为最为核心的部件，包含先导阀，主阀芯，液压阀块和电路反馈块等。FIVA作为一种电液比例阀，其作用是控制喷油定时、喷油量、喷油压力和排气阀的启闭。</p>
+</blockquote>
+<ul>
+<li>FIVA的启闭是由汽缸控制单元CCU（Cylinder Control Unit）通过分析来自于曲轴转角传感器（Tacho System，Angle Encoders）、转速传感器（RPM Detector）和燃油升压泵（Fuel Pressure Booster）柱塞位置传感器的综合信号进而对FIVA发出启闭指令的。 <strong>通常来讲，FIVA作为精密部件，应在专人指导下拆装或送岸维修。至少应保持１个FIVA备件在船。</strong></li>
+</ul>
+<p>众所周知，良好的缸套润滑对延长主机的使用寿命有着举足轻重的作用。为使ME-C电喷主机的活塞环与缸套平稳度过磨合期，气缸油的注油率应进行缓慢多次的调节，大致分三个主要阶段进行调节，即<strong>Breaking-in</strong>（一般指前500小时）、<strong>Running-in Phase-1</strong>（一般指500-1500小时）和<strong>Running-in Phase-2</strong>（一般指1500-2500小时）。密切结合Liner &amp; Piston Ring 的扫气口检查结果来做相应的注油率调节。</p>
+<ol>
+<li><p>在磨合期内注入超量的气缸油，主要有两个主要原因：</p>
+<ul>
+<li>是冲刷干净磨损下来的固态颗粒；</li>
+<li>是在尚未完成磨合的缸套内帮助建立润滑油膜。</li>
+</ul>
+</li>
+<li><p>改变注油率的操作方法对ME-C电喷主机来说是比较简单的：</p>
+<ul>
+<li>在MOP界面登录Chief Level Auxiliaries Cylinder Lubricators输入在用燃油的含硫量S%，</li>
+<li>保持Feed Rate Factor和Basic Feed Rate不变，调节Min. Feed Rate的数值。</li>
+<li>对于MAN B&amp;W 7S70ME-C机型来说，Cylinder Oil Feed-rate参考值是：0.95 g&#x2F;kwh @ 6500小时。（燃油含硫量S%&#x3D;2.78%,气缸油BN&#x3D;100）。</li>
+</ul>
+</li>
+</ol>
+<p><strong>新型ME－C电喷主机多采用电子板块控制的Alpha注油器以取代传统的机械式注油器，值得一提的是，该Alpha注油器与安装在传统主机MC－C上的注油器并无明显的不同。但对于ME－C电喷主机来讲，其Cylinder Lubrication Back-up的方式有所不同。当CCU失效且不能及时更换时，可临时搭建一根电缆连接ECU－A或ECU－B的CH52和Cylinder Lubricator上的电磁阀（Solenoid Valve）。此时，Cylinder Lubrication的定时将变为随机定时（Random Timing）。</strong> </p>
+<h2 id="四、燃油系统（Fuel-Oil-System）-排气阀（Exhaust-Valve）"><a href="#四、燃油系统（Fuel-Oil-System）-排气阀（Exhaust-Valve）" class="headerlink" title="四、燃油系统（Fuel Oil System）+ 排气阀（Exhaust Valve）"></a><strong>四、燃油系统（Fuel Oil System）+ 排气阀（Exhaust Valve）</strong></h2><ol>
+<li><p>与传统MC-C主机相比，ME-C电喷主机的燃油系统最大的变化有三点：</p>
+<ul>
+<li>后者的燃油升压器（Fuel Pressure Booster）的柱塞驱动是由FIVA控制的20 Mpa液压油来实现的；</li>
+<li>后者的Suction Valve做的非常小；</li>
+<li>后者取消了Puncture Valve的设计并对柱塞安装了位置反馈传感器（Plunger Position Feedback Sensor），该传感器若感应到Plunger在压缩冲程中处于上升运动状态时，FIVA将使排气阀立刻动作到开启位置。<strong>至少应保持１个Feed back Sensor备件在船。</strong></li>
+</ul>
+</li>
+<li><p>对于调节电喷主机的最大爆炸压力，因其智能化电子控制系统，这也是非常简单的操作。</p>
+<ul>
+<li>在MOP界面登录Chief Level，</li>
+<li>进入Engine Cylinder Pressure，</li>
+<li>然后调节燃油喷油定时便可实现。<br>   简言之，这一过程其实就是相当于MC-C主机的VIT调节。</li>
+</ul>
+</li>
+<li><p>ME-C电喷主机的排气阀与传统的并无太大的差异，主要变化有三点。</p>
+<ul>
+<li>ME-C的排气阀的启闭是由FIVA控制的20 Mpa的液压油驱动Exhaust Valve Actuator来实现的。</li>
+<li>用于关闭排气阀的空气弹簧，ME-C相比于MC-C设计的更小。</li>
+<li>ME-C的排气阀安装了阀杆的位置反馈信号传感器（Spindle Position Feedback Sensor）。<br>   如本文开篇所述，ME-C电喷主机的最大优点就是集成的智能化控制，想要改变排气阀的启闭定时也是非常简单的。操作方法是：在MOP界面登录Chief Level，再进入Engine Cylinder Pressure，调节压缩比（Adjustment of Compression Ratio Offset）即可改变排气阀的关闭定时。若想改变排气阀的开启定时，则需改变Exhaust Valve Open Timing Offset（以角度为单位）就可实现。</li>
+</ul>
+</li>
+<li><p>排气阀阀杆位置反馈信号传感器（Spindle Position Feedback Sensor）是一种近距离传感器（Proximity Sensor），在ME-C电喷主机中故障率较高而且一旦发出报警，主机将进行自动慢速降车（Auto Slow Down）。当某缸排气阀的阀杆显示开启间隙异常时（在PMI电脑上的排气阀阀杆冲程界面Exhaust Valve Stroke上可以看到），在排除掉机械方面即排气阀本身的原因后，应立即检查该Feedback Sensor。检查方法是：</p>
+<ul>
+<li><p>备车使主机处于Stand-by状态（手动启动Electrically Driven Start-up Pumps）</p>
+</li>
+<li><p>在主操作屏Main Operating Panel（MOP）上登录Chief Level</p>
+</li>
+<li><p>将MPC模式更换为TEST Mode Maintenance Troubleshooting HCU</p>
+</li>
+<li><p>如1号缸排气阀有故障，点击Cylinder-1点击Exhaust Valve Open或者Close，</p>
+</li>
+<li><p>与此同时，轮机员在排气阀旁倾听阀杆开启或关闭的声音并用万用表测量该Sensor端头的电压值（4-20 mA的电流信号，1 V&#x3D;5 mA）。如有必要，更换该Sensor。</p>
+<p><strong>鉴于Fuel Pressure Booster Plunger Position Feedback Sensor的检查方法与排气阀的Feedback Sensor完全相同，在此不再赘述。需要特别注意的是，当点击Cyclic-Test按键时将会引起燃油喷射入气缸，如无必要，切勿点击此按键以免燃油误喷对燃烧室造成脏污。</strong></p>
+</li>
+</ul>
+</li>
+<li><p>电喷主机的封缸运行操作相对于传统主机的也是极其简单。</p>
+<ul>
+<li>将主机停车，在MOP界面登录Chief Level，</li>
+<li>进入Engine Chief Limiters，降低故障缸的Chief Index Limit至0，</li>
+<li>最后对排气阀进行锁闭在常关或常闭的位置即可。</li>
+</ul>
+<p><strong>值得注意的是，在恢复该缸运行前，主机必须停车然后再恢复Chief Index Limit。这是为了避免瞬时喷入燃烧室的燃油过多从而产生爆燃，冒黑烟等不良现象。</strong></p>
+</li>
+</ol>
+<h2 id="五、ME-C电喷主机运行参数的监测与分析（PMI-CoCoS-EDS）"><a href="#五、ME-C电喷主机运行参数的监测与分析（PMI-CoCoS-EDS）" class="headerlink" title="五、ME-C电喷主机运行参数的监测与分析（PMI &amp; CoCoS-EDS）"></a><strong>五、ME-C电喷主机运行参数的监测与分析（PMI &amp; CoCoS-EDS）</strong></h2><blockquote>
+<p> 对主机的运行参数进行连续监测与分析有利于将主机运行在最优化的运转状态下，此举将使油耗率和CO2及NOx的排放量达到最佳的运行状态。</p>
+</blockquote>
+<ul>
+<li><p>经验表明，爆炸压力P-max的增加，将使油耗率下降。由此可见，维持P-max在最优化的状态对主机运行的经济性是至关重要的。</p>
+</li>
+<li><p>ME-C电喷主机的运行参数的监测与分析主要是由PMI和CoCos-EDS系统来完成的，该系统也是高智能化的集成板块。有PMI on-line和PMI off-line之分。</p>
+</li>
+<li><p>前者能做到持续监控汽缸爆炸压力P-max而且自动计算出一套关键数据，该数据可以用来描述&#x2F;分析缸内的燃烧过程。正是基于这个功能，安装有PMI-on-line的电喷主机可以对P-max进行自动调节使主机始终处在最佳油耗率的运转状态下，大大提高其运转经济性。</p>
+</li>
+<li><p>同时，减少CO2及NOx的排放量，降低主机维修保养费用并增加主机运转可靠性。也大大简少了轮机员的工作量。</p>
+</li>
+<li><p>在当前IMO越来越严格的排放标准的实施下，这项技术对未来“绿色船舶”的建造提供了很好的条件基础。</p>
+</li>
+</ul>
+<p><strong>定期更新PMI系统的应用软件和对汽缸压力电子分析仪（Cylinder Pressure Analyser）进行恰当的保养是保障电喷主机运行参数监测系统正常运行的重要工作。</strong> </p>
+<h2 id="六、ME-C电喷主机的报警和处理方法（Alarms-Trouble-shooting）"><a href="#六、ME-C电喷主机的报警和处理方法（Alarms-Trouble-shooting）" class="headerlink" title="六、ME-C电喷主机的报警和处理方法（Alarms &amp; Trouble shooting）"></a><strong>六、ME-C电喷主机的报警和处理方法（Alarms &amp; Trouble shooting）</strong></h2><blockquote>
+<p>ME-C电喷主机所有的报警均会同步显示在ECR报警模拟器和MOP A或MOPB 的ALARMS界面上。其高度智能化设计使得每个报警均有故障分析和原因以及处理意见的描述。</p>
+</blockquote>
+<ul>
+<li><p>在MOP的触摸屏上选择Alarm再点击屏幕右下端的Info按键，界面将显示：Alarm Description，Alarm Cause，Effect of Alarm，Action。</p>
+</li>
+<li><p>按照系统的指示进行Trouble shooting，成功率都是非常高的。</p>
+</li>
+<li><p>轮机员若想转出报警清单（Alarm List），点击Export按键，在MOP的后面插入一个干净无病毒的USB，然后点击“Save”就可以将报警清单储存下来。文件的格式是：YYYYMMDD-HHMMSS-CCUx-CCUBurstLogger.dat</p>
+</li>
+</ul>
+<p><strong>不可否认的是，在接到报警后，认真研读相关部分的说明书，将大大有助于轮机员尽快的排除故障。</strong> </p>
+<h2 id="七、集成的智能化多功能控制面板MPC（Multi-Purpose-Controller）-LOP-操作"><a href="#七、集成的智能化多功能控制面板MPC（Multi-Purpose-Controller）-LOP-操作" class="headerlink" title="七、集成的智能化多功能控制面板MPC（Multi-Purpose Controller）+ LOP 操作"></a>七、集成的智能化多功能控制面板MPC（Multi-Purpose Controller）+ LOP 操作</h2><blockquote>
+<p>MPC集成电路板块在ME-C的电喷主机中运用的非常多，每一个CCU、ECU、EICU、ACU均安装有一块硬件结构上完全相同但软件不同的MPC板块，这些内部装载有不同的软件&#x2F;程序的MPC板块同时接收和发出不同的运行指令。值得一提的是，每一个MPC均可以互换但必须进行程序下载。</p>
+</blockquote>
+<p><strong>特别需要注意的是，禁止随意交换固定在每个控制箱门上的程序钥匙</strong>。因为该程序钥匙对于每一个控制箱来讲都是独一无二的。<strong>一般来讲，每船均会配备一把没有装载任何程序的空白钥匙，以作应急使用。</strong> </p>
+<ol>
+<li><p>MPC板块的锂电池（型号CR2032）在电压低时，系统将发出提示性警报。**切忌在主机运行时更换此电池。**若要更换，主机必须停车。事实上，该电池仅仅是对MPC内部的时钟（Internal Clock）供电而并不是作为其它电源的备用。即使电源压力低也不会影响主机的正常运行。可待船抵达方便港口后再进行更换。</p>
+</li>
+<li><p>需要指出的是，ME-C电喷主机的机器控制单元Engine Control Unit （ECU）就是相当于该主机的调速器，ECU将计算主机在每一个特定转速需要的燃油量（Calculate the Needed Fuel Index for Main Engine）。出于安全考虑，所有的应急停车信号（Emergency Shut-down Signal）均设计成直达Engine Control System（ECS-SS）以达到快速停车的目的。该设计与MC-C传统主机的Safety Air来控制Puncture Valve切断燃油相比显得高度智能化，提高了主机的可靠性和安全性。 </p>
+</li>
+<li><p>ME-C电喷主机的当地控制Local Operating Panel（LOP）是类似于传统MC-C主机的机旁操作系统。当主机切换到LOP时，所有的控制指令将不再经过安装在控制室ECR的人机交换界面Engine Interface Control Unit（EICU），这一设计使得当EICU失效或者控制室ECR着火的情况下轮机员仍然可以对主机握有操纵权。</p>
+</li>
+<li><p>定期对ME-C电喷主机的各种软件&#x2F;程序进行更新，是管理电喷主机电气化控制原件最重要的工作之一，同时必须定期检查各接线箱内的接头松紧度以防止接触不良。定期检查各控制箱的绝缘度和接地线及屏蔽线是否接触良好，严格保持控制箱的清洁度及散热良好。</p>
+</li>
+</ol>
+<p> <strong>总而言之，ME-C电喷主机作为一种新型的智能化主机，其发展历程也仅仅是过去15-20年左右，不管是设计还是技术层面的创新也是在不断地完善与改进当中。这就需要轮机员在日常管理中认真研读有关说明书，对出现的问题做到举一反三，对各系统的维护保养做到全面仔细，提高主机的可靠性与安全性，这样船舶的安全才有保障。</strong></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://dmdusk.com">旦暮灯</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://dmdusk.com/posts/2874389552.html">https://dmdusk.com/posts/2874389552.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://dmdusk.com" target="_blank">DMDUSK</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/MAN-B-W-7S70ME-C8-2/">MAN.B&amp;W-7S70ME-C8.2</a><a class="post-meta__tags" href="/tags/%E7%94%B5%E5%96%B7%E4%B8%BB%E6%9C%BA/">电喷主机</a><a class="post-meta__tags" href="/tags/%E7%AE%A1%E7%90%86%E5%BF%83%E5%BE%97/">管理心得</a></div><div class="post-share"><div class="social-share" data-image="https://i.loli.net/2019/07/18/5d2f5d526bd7690858.gif" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/2865054090.html" title="瓦锡兰·齐耀机带离心滤器拆检"><img class="cover" src="/img/post/20200825222151.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">瓦锡兰·齐耀机带离心滤器拆检</div></div><div class="info-2"><div class="info-item-1">前言： 瓦锡兰的副机对于滑油要求非常高，基本上只要滑油维护保养得好，副机不会出现大的问题。而机带滑油滤器可以说是非常重要了，今天就跟二管一起拆检了一次，这台副机只有一个滑油离心滤器。    拆装过程: 将滑油进口阀关闭，用小活动扳手将外部卡箍旋松，拿下头部外壳，如图1    此时我们已经可以看到离心滤器本体，如图2    然后把滤器拿下来放到旁边，如图3    接着我们将滤器底座清洁干净盖好，如图4图5     我们将拿下来的滤器本体拿到工作间利用虎台钳夹紧，然后利用60号开口扳手（根据实际情况）旋松紧固螺母。此处应注意为了不损伤本体需要加垫软性材料，如铜皮，橡胶等，如图6    旋松后，双手抱紧本体外壳向上提起，将滤器拆开如下三个部件，并检查，如图7；此处应注意，本体紧固螺母带有限位，无法完全拆除。    检查完毕后，利用破布棉纱，螺丝刀等工具清洁干净。如图8    清洁完毕后，开始装复，装复时可以加装由海图纸裁剪而成的纸衬，使滤器内的杂质不会吸附在本体上，方便下次清洁，如图9    最后，反向拆除过程，安装好即可   最后：​       ...</div></div></div></a><a class="pagination-related" href="/posts/2066502676.html" title="往前走，向钱看"><img class="cover" src="/img/post/20200825221349.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">往前走，向钱看</div></div><div class="info-2"><div class="info-item-1">...</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">旦暮灯</div><div class="author-info-description">每一个人都在与人生苦战</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">72</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://zhihu.com/people/wyz741525741" target="_blank" title="知乎"><i class="fab fa-zhihu" style="color: ffffff;"></i></a><a class="social-icon" href="https://weibo.com/qq741525741" target="_blank" title=""><i class="fab fa-weibo"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=741525741&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq" style="color: ffffff;"></i></a><a class="social-icon" href="mailto:yongzhi0507@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://cdn.jsdelivr.net/gh/wyz741525741/CND/img/20211006210748.jpg" target="_blank" title="wechat"><i class="fab fa-weixin" style="color: ffffff;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81ME-C%E7%94%B5%E5%96%B7%E4%B8%BB%E6%9C%BA%E8%B6%85%E4%BD%8E%E9%80%9F%E8%BF%90%E8%A1%8C%EF%BC%88Super-Slow-Steaming%EF%BC%89%E7%9A%84%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">1.</span> <span class="toc-text">一、ME-C电喷主机超低速运行（Super Slow Steaming）的注意事项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%8A%A8%E5%8A%9B%E6%B6%B2%E5%8E%8B%E6%B2%B9%E4%BE%9B%E7%BB%99%E7%B3%BB%E7%BB%9F%EF%BC%88Hydraulic-Power-Supply%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">二、动力液压油供给系统（Hydraulic Power Supply）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%B6%B2%E5%8E%8B%E6%B1%BD%E7%BC%B8%E5%8D%95%E5%85%83-%EF%BC%88Hydraulic-Cylinder-Unit%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">三、液压汽缸单元 （Hydraulic Cylinder Unit）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E7%87%83%E6%B2%B9%E7%B3%BB%E7%BB%9F%EF%BC%88Fuel-Oil-System%EF%BC%89-%E6%8E%92%E6%B0%94%E9%98%80%EF%BC%88Exhaust-Valve%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">四、燃油系统（Fuel Oil System）+ 排气阀（Exhaust Valve）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81ME-C%E7%94%B5%E5%96%B7%E4%B8%BB%E6%9C%BA%E8%BF%90%E8%A1%8C%E5%8F%82%E6%95%B0%E7%9A%84%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%88%86%E6%9E%90%EF%BC%88PMI-CoCoS-EDS%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">五、ME-C电喷主机运行参数的监测与分析（PMI &amp; CoCoS-EDS）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81ME-C%E7%94%B5%E5%96%B7%E4%B8%BB%E6%9C%BA%E7%9A%84%E6%8A%A5%E8%AD%A6%E5%92%8C%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95%EF%BC%88Alarms-Trouble-shooting%EF%BC%89"><span class="toc-number">6.</span> <span class="toc-text">六、ME-C电喷主机的报警和处理方法（Alarms &amp; Trouble shooting）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E9%9B%86%E6%88%90%E7%9A%84%E6%99%BA%E8%83%BD%E5%8C%96%E5%A4%9A%E5%8A%9F%E8%83%BD%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BFMPC%EF%BC%88Multi-Purpose-Controller%EF%BC%89-LOP-%E6%93%8D%E4%BD%9C"><span class="toc-number">7.</span> <span class="toc-text">七、集成的智能化多功能控制面板MPC（Multi-Purpose Controller）+ LOP 操作</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/483861191.html" title="阿法拉伐S&amp;P型分油机使用说明书（Operating Instructions）"><img src="/img/post/20210201150327.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="阿法拉伐S&amp;P型分油机使用说明书（Operating Instructions）"/></a><div class="content"><a class="title" href="/posts/483861191.html" title="阿法拉伐S&amp;P型分油机使用说明书（Operating Instructions）">阿法拉伐S&amp;P型分油机使用说明书（Operating Instructions）</a><time datetime="2021-02-01T06:56:55.000Z" title="发表于 2021-02-01 14:56:55">2021-02-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1515555783.html" title="阿法拉伐造水机海水泵更换机械密封"><img src="/img/post/20200927203445.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="阿法拉伐造水机海水泵更换机械密封"/></a><div class="content"><a class="title" href="/posts/1515555783.html" title="阿法拉伐造水机海水泵更换机械密封">阿法拉伐造水机海水泵更换机械密封</a><time datetime="2020-09-27T02:00:03.000Z" title="发表于 2020-09-27 10:00:03">2020-09-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1345941684.html" title="学海员之前，不看后悔一生！"><img src="/img/post/20200902190349.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="学海员之前，不看后悔一生！"/></a><div class="content"><a class="title" href="/posts/1345941684.html" title="学海员之前，不看后悔一生！">学海员之前，不看后悔一生！</a><time datetime="2020-09-01T14:48:59.000Z" title="发表于 2020-09-01 22:48:59">2020-09-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/669041207.html" title="锅炉拆检电子水位计及极低液位传感器（无图）"><img src="https://preview.cloud.189.cn/image/imageAction?param=A28D135B5346AF6EB376EDC17D5A9B9F7BBB5197EB6D8BCC393BF078F5996E9370363E284D8A41ECF540BF99F4CEDDA5CF4E5FEBDE4847C5B4B41B3ED76D7E757C38DABDA20BD100B827B414B807554999111FE6AC0B4EDD6FBE11D7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="锅炉拆检电子水位计及极低液位传感器（无图）"/></a><div class="content"><a class="title" href="/posts/669041207.html" title="锅炉拆检电子水位计及极低液位传感器（无图）">锅炉拆检电子水位计及极低液位传感器（无图）</a><time datetime="2020-08-10T10:28:04.000Z" title="发表于 2020-08-10 18:28:04">2020-08-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2841450072.html" title="是什么信念让你披星戴月地工作？"><img src="/img/post/20200825222226.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="是什么信念让你披星戴月地工作？"/></a><div class="content"><a class="title" href="/posts/2841450072.html" title="是什么信念让你披星戴月地工作？">是什么信念让你披星戴月地工作？</a><time datetime="2019-10-03T01:08:56.000Z" title="发表于 2019-10-03 09:08:56">2019-10-03</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/img/footer_img.avif);"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By 旦暮灯</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'forest'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = `%%{init:{ 'theme':'${theme}'}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (true) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  let initFn = window.walineFn || null
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = {"requiredMeta":["nick","mail"],"locale":{"placeholder":"无需登陆！！！但是昵称和邮箱为必填项！以确保可以收到回复邮件！"}}
+
+  const destroyWaline = ele => ele.destroy()
+
+  const initWaline = (Fn, el = document, path = window.location.pathname) => {
+    const waline = Fn({
+      el: el.querySelector('#waline-wrap'),
+      serverURL: 'waline.dmdusk.com',
+      pageview: false,
+      dark: 'html[data-theme="dark"]',
+      comment: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyWaline = () => {
+        destroyWaline(waline)
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const loadWaline = (el, path) => {
+    if (initFn) initWaline(initFn, el, path)
+    else {
+      btf.getCSS('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.css')
+        .then(() => import('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.js'))
+        .then(({ init }) => {
+          initFn = init || Waline.init
+          initWaline(initFn, el, path)
+          window.walineFn = initFn
+        })
+    }
+  }
+
+  if (isShuoshuo) {
+    'Waline' === 'Waline'
+      ? window.shuoshuoComment = { loadComment: loadWaline } 
+      : window.loadOtherComment = loadWaline
+    return
+  }
+
+  if ('Waline' === 'Waline' || !false) {
+    if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+    else setTimeout(loadWaline, 0)
+  } else {
+    window.loadOtherComment = loadWaline
+  }
+})()</script></div><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      const usePjax = true
+      false 
+        ? (usePjax ? pjax.loadUrl('/404.html') : window.location.href = '/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

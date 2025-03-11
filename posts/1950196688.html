@@ -1,0 +1,450 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>船舶分油机常见故障分析和防范措施 | DMDUSK</title><meta name="author" content="旦暮灯"><meta name="copyright" content="旦暮灯"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="​         随着航运业的迅猛发展，为降低成本，船舶所用的燃油也越来越低劣，很多船舶使用380 或者更差的燃料油。这种重质燃油不仅粘度高、密度大，而且渣滓特别多，进入分油机前往往要加热到95℃ 以上，使得分油机的工作条件越来越来恶劣；而且，为了把密度相近的重油和水分离，要求分油机高转速，有的达到每分钟九千转以上，为分油机的养护带来挑战。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="船舶分油机常见故障分析和防范措施">
+<meta property="og:url" content="https://dmdusk.com/posts/1950196688.html">
+<meta property="og:site_name" content="DMDUSK">
+<meta property="og:description" content="​         随着航运业的迅猛发展，为降低成本，船舶所用的燃油也越来越低劣，很多船舶使用380 或者更差的燃料油。这种重质燃油不仅粘度高、密度大，而且渣滓特别多，进入分油机前往往要加热到95℃ 以上，使得分油机的工作条件越来越来恶劣；而且，为了把密度相近的重油和水分离，要求分油机高转速，有的达到每分钟九千转以上，为分油机的养护带来挑战。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://dmdusk.com/img/post/20200825223150.png">
+<meta property="article:published_time" content="2019-04-08T14:50:47.000Z">
+<meta property="article:modified_time" content="2025-03-07T14:26:56.000Z">
+<meta property="article:author" content="旦暮灯">
+<meta property="article:tag" content="分油机">
+<meta property="article:tag" content="船舶设备">
+<meta property="article:tag" content="故障分析">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://dmdusk.com/img/post/20200825223150.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "船舶分油机常见故障分析和防范措施",
+  "url": "https://dmdusk.com/posts/1950196688.html",
+  "image": "https://dmdusk.com/img/post/20200825223150.png",
+  "datePublished": "2019-04-08T14:50:47.000Z",
+  "dateModified": "2025-03-07T14:26:56.000Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "旦暮灯",
+      "url": "https://dmdusk.com/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/icon.png"><link rel="canonical" href="https://dmdusk.com/posts/1950196688.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/img/pwa/manifest.json"/><link rel="apple-touch-icon" sizes="180x180" href="/img/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/pwa/32.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/img/pwa/16.png"/><link rel="mask-icon" href="/img/pwa/favicon.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '船舶分油机常见故障分析和防范措施',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">72</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/word/"><i class="fa-fw fas fa-bookmark"></i><span> 摘抄</span></a></div><div class="menus_item"><a class="site-page" href="/cloud/"><i class="fa-fw fas fa-database"></i><span> 分享</span></a></div><div class="menus_item"><a class="site-page" href="/talk/"><i class="fa-fw fas fa-thumbtack"></i><span> 留言</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 博主</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/post/20200825223150.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">DMDUSK</span></a><a class="nav-page-title" href="/"><span class="site-name">船舶分油机常见故障分析和防范措施</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/word/"><i class="fa-fw fas fa-bookmark"></i><span> 摘抄</span></a></div><div class="menus_item"><a class="site-page" href="/cloud/"><i class="fa-fw fas fa-database"></i><span> 分享</span></a></div><div class="menus_item"><a class="site-page" href="/talk/"><i class="fa-fw fas fa-thumbtack"></i><span> 留言</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 关于</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 博主</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">船舶分油机常见故障分析和防范措施</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-04-08T14:50:47.000Z" title="发表于 2019-04-08 22:50:47">2019-04-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-03-07T14:26:56.000Z" title="更新于 2025-03-07 22:26:56">2025-03-07</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%BD%AE%E6%9C%BA%E7%9B%B8%E5%85%B3/">轮机相关</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><blockquote>
+<p>​         随着航运业的迅猛发展，为降低成本，船舶所用的燃油也越来越低劣，很多船舶使用380 或者更差的燃料油。这种重质燃油不仅粘度高、密度大，而且渣滓特别多，进入分油机前往往要加热到95℃ 以上，使得分油机的工作条件越来越来恶劣；而且，为了把密度相近的重油和水分离，要求分油机高转速，有的达到每分钟九千转以上，为分油机的养护带来挑战。</p>
+</blockquote>
+<span id="more"></span>
+
+<p>虽然分油机结构、形态各异，但具体工作原理都是通过高速旋转产生离心力，将比重不同的油、水、渣分离，并通过不同的途径排出。功能上只有分水和分渣两种。现代船舶大多配有两台燃油分油机和一台滑油分油机，主要有阿法拉伐(Alfa Lava1)系列、日本三菱的一T、SJ—P型和巴工的DH、MND型、瑞典的MM—l X型、国产DZY一15，DZY一30，DZY一50等系列。</p>
+<h3 id="分油机出水口跑油"><a href="#分油机出水口跑油" class="headerlink" title="分油机出水口跑油"></a>分油机出水口跑油</h3><ul>
+<li>比重盘内口径不当；</li>
+<li>进油量过大；</li>
+<li>分离筒内积聚污物太多，排渣口脏堵；</li>
+<li>配水盘故障，水封建立不起来；</li>
+<li>加热不够，进口油温太低；</li>
+<li>高置水箱水位过低导致托盘没有托起，等。</li>
+</ul>
+<p>虽然原因很多，但大多是由排渣口脏堵引起的，只需将分油机进油阀关闭，手动排渣一到两次，故障多能排除。其它原因，如分油机出油阀没有打开或没有全部打开引起跑油，不属于机械故障，就不再讨论了。<br>按故障表逐一排查，不仅费时费力，而且可能使问题复杂化甚至根本找不到毛病。不妨采用这样的思考方式加以分析，例如：</p>
+<ol>
+<li><p>上午分油机正常，下午就跑油了，显然可以排除比重盘内径太小。</p>
+</li>
+<li><p>若进油量太大，只需将进油阀关小一点(注意，这时要手动排渣一次，否则，跑油现象未必会停止)。</p>
+</li>
+<li><p>至于是不是分离筒内污物太多，可以查看轮机日志，看是不是到该拆洗分油机的时间了。根据笔者经验，自动排渣式分油机一般一到二个月洗一次就可以了；但若是重油太脏，则应增加排渣次数(调小排渣间隔时间，含渣量低于0．3％的重油，每分离1000升排渣一次)。</p>
+</li>
+<li><p>配水盘故障，一般是橡皮圈老化，弹性不足，密封性降低所致，应该按照橡皮圈的寿命定期更换；另一种可能是工作水不干净，配水盘脏赌，应该清洗配水盘，更换橡皮圈。</p>
+</li>
+<li><p>至于“进口油温太低”和“高置水箱水位过低”等原因，目测就能确定。</p>
+</li>
+</ol>
+<p>经上面分析可知，尽管一件事物纷繁复杂，经过条理的分析，就会变得简单清晰。这种思考方法很重要，可以运用到其它各项工作中去。</p>
+<p>例如本人曾工作过的一条船上分油机跑油，几乎清洗并且检查了相关的每一个部件，仍旧跑油，轮机长也不能确定原因。我们只好回到起点，再从头来看说明书、查资料、推敲原理，分析故障原因。</p>
+<p>分析过程中，怀疑可能是分离筒上的喷嘴有问题，导致工作水压力不足，托不起水封托盘才导致跑油。此前总觉得喷嘴刚换新不久，失效的可能性不大，因此没有更换。更换了喷嘴上的全部橡皮圈之后，解决了跑油问题。</p>
+<p>其后，这样的问题经常出现，同样都是更换喷嘴上的橡皮圈解决问题。为什么寿命通常为半年的橡皮圈，只能用到一个月左右呢?经检查发现，失效喷嘴上的橡皮圈已经老化，并被很多泥沙一样的东西卡死，清洗之后也用不了几天。</p>
+<p>经仔细分析才知道，燃油加热温度太高(有时候95℃)，而橡皮圈耐高温性能较差，同时工作水结垢严重。我们换用耐高温的橡皮圈，并经常给工作水箱排污，再也没有发生过这种原因引起的跑油。</p>
+<h3 id="分油机出现异常振动和噪音"><a href="#分油机出现异常振动和噪音" class="headerlink" title="分油机出现异常振动和噪音"></a>分油机出现异常振动和噪音</h3><ul>
+<li><p>分离筒分离盘装配不正确，锁紧螺帽没拧紧；</p>
+<p> 分油机的异常振动，若是突然发生的，很可能是内部某个部件损坏，如减振弹簧失效或断裂，齿轮损坏，滚珠轴承损坏，立轴底部滚珠破碎或弹簧失效等；相反，若分油机的异常振动是是逐步加大的，而且也不是很剧烈。可能是分离筒内太脏。<br> 遇到分油机异常振动或者异常噪音时，首先应该立即关闭进口阀，然后停掉分油机，合上制动摩擦手柄，以免事故进一步扩大。不必急于打开分油机，应认真思考可能的原因。分油机部件众多，结构紧凑，应细心注意拆装和清洗的每个细节，以避免装配产生的振动。<br> 一般来说，每个分离盘的外表面有四～六条隆起的筋，保证分离盘将油隔成的各薄层的厚度，有利于分离盘的稳定，便于油水渣的分离。清洗后装配分离盘时，使分离盘内缘的缺口对准盘架上的定位键，最好按照分离盘编号顺序装入，以保证分离盘四周的分配孔轴向对正而形成垂直的配油通道，让油液经过此通道流至各分离盘间进行分离。如果隆起的筋坏了，应更换该分离盘。<br> 对于新手来说，很容易误以为每个分离盘都是一样的。其实，最上面的和最下面的分离盘，都和其它的分离盘不一样，如果装错了，不但分离效果不理想，还可能引起振动。<br> 另外，分离筒本体上有一个凹槽，组装时注意将盘架上的定位键对准该槽，否则装配压盖时压不紧，而且运行时容易产生振动。<br> 值得一提的是，分离筒本体和主轴之间是通过锥形锁紧螺母紧固的。该锁紧螺母为反螺纹，与分油机运转方向相反。为便于下次拆装，装配时可涂些牛油。<br> 以上任何一个步骤出现问题，都可能使分离筒的动平衡受到破坏，从而产生异常振动。</p>
+</li>
+<li><p>减振弹簧损坏或者缓冲橡皮圈损坏；</p>
+<ul>
+<li>减振弹簧损坏和缓冲橡皮圈因为分离筒位置离底部很高，重心也高，同时由于分油机转速很快，立轴的中部，一般都设置一个减振弹簧盘，盘内有八根刚度很大的不易损坏的减振弹簧。<br> 当某个弹簧失效或者折断时，应同时全部换新。若不能及时更换，可加塞垫片或适度调节弹簧座螺母，以临时起到减振作用。这样做并不可靠，应尽早换新全部减振弹簧。</li>
+</ul>
+</li>
+<li><p>立轴自身磨损以及底部滚珠损坏；</p>
+<ul>
+<li>立轴自身被磨损的情况很少见，但装配或操作不当也会发生。<br> 笔者就曾经历过这样的事故：三管轮在装分离筒时，分油机压盖没有对正位置不小心压在分离筒上，还忘记装上锁紧螺母，启动分油机后就到集控室去了，等他回来时，只见分油机异常颤抖，周围还冒着烟。赶紧停掉分油机，打开一看，由于与分离筒之间的高速相对运动，立轴外表后已经熔化。</li>
+</ul>
+</li>
+<li><p>分离筒内太脏，导致分离筒重 Co,偏离；</p>
+<ul>
+<li>现代船舶装配的都是自动排渣式分油机，由于执行ISM 规则，大都能做到定期清洗，因此很少是由于分离片脏而引起分油机振动。如果确是分离片脏了，不妨拆开清洗一下。</li>
+</ul>
+</li>
+<li><p>齿轮间隙过大或者干磨擦；滚珠轴承损坏，等。</p>
+<ul>
+<li>分油机齿轮间隙过大，齿轮箱滑油不足导致齿轮干磨，中间滚珠轴承损坏等，都能引起分油机振动。若联轴器上的磨擦片失效，不仅引起振动，还会发生跑油现象。</li>
+</ul>
+</li>
+</ul>
+<h3 id="分油效果不佳、分油效果不好"><a href="#分油效果不佳、分油效果不好" class="headerlink" title="分油效果不佳、分油效果不好"></a>分油效果不佳、分油效果不好</h3><ul>
+<li><p>油中含水</p>
+<ul>
+<li>水封水不足，或者是水封受到破坏——重新启动分油机；</li>
+<li>比重环口径太小——更换比重环；</li>
+<li>油温过低——调节进口油温；</li>
+<li>进口油中水分太多——沉淀油柜放残水。</li>
+</ul>
+<p>一般分油机对含水量低于5％的重油有最好的分离效果。如果含水量大于此，分离效果将会大幅降低。事实上，重油含水量大都低于1％，出现重油含水量太大，多是沉淀油柜长期不放残水或者油舱已用至底部所致</p>
+</li>
+<li><p>排水中含油</p>
+<ul>
+<li>进口油量过大——适当调小油量；</li>
+<li>比重环口径过大——更换比重环。</li>
+</ul>
+</li>
+<li><p>油中渣滓分离不干净</p>
+<ul>
+<li>重油太脏——降低分离量，必要时可循环分油；</li>
+<li>排渣间隔时间太长——减小排渣间隔时间；</li>
+<li>进口油量太大——降低分离量；</li>
+<li>进口油温过低，油黏度大——适当调高油温。</li>
+</ul>
+</li>
+<li><p>油泵供油不足<br>分油机上的油泵一般都是自带式齿轮泵，它的容量一般都大于分油机的额定工作流量，很少会出现油泵供油不足。<br>遇到油泵供油不足，首先听听油泵有没有不正常的声响，再从声音判断是吸空还是油泵故障。若是吸空，可能是油温太低，或沉定柜没有加热，油的黏度太大，需调节油温。<br>油泵的故障主要是齿轮磨损，内部间隙超出规定范围，齿轮泵转动轴／销断裂，油泵安全调节阀失灵或者有漏气等，可解体更换部分或全部部件，排除故障。</p>
+</li>
+</ul>
+<h3 id="控制系统故障"><a href="#控制系统故障" class="headerlink" title="控制系统故障"></a>控制系统故障</h3><ul>
+<li>分油机不能正常启动，很少但也有发生，多是由于振动和摇摆，使电线的接头脱落。当然，如果马达卡死，分油机也不能正常启动。</li>
+<li>不能定时排渣，原因多在定时器损坏。电磁阀失灵或卡死也会导致分油机排渣功能紊乱，甚至分油机一直不排渣，应该检修电磁阀。</li>
+<li>由于分油机装配不正确，启动之后分油机运行负荷过大，超出定时器规定的时间后，出于对马达的保护，分油机会自动跳电。应该重新装配分油机。</li>
+<li>若分离筒上主密封圈损坏，运转过程中水封水大量流出，造成假跑油现象，分油机也会自动停止。应该换新分离筒上主密封圈。</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://dmdusk.com">旦暮灯</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://dmdusk.com/posts/1950196688.html">https://dmdusk.com/posts/1950196688.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://dmdusk.com" target="_blank">DMDUSK</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%88%86%E6%B2%B9%E6%9C%BA/">分油机</a><a class="post-meta__tags" href="/tags/%E8%88%B9%E8%88%B6%E8%AE%BE%E5%A4%87/">船舶设备</a><a class="post-meta__tags" href="/tags/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/">故障分析</a></div><div class="post-share"><div class="social-share" data-image="/img/post/20200825223150.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/2066502676.html" title="往前走，向钱看"><img class="cover" src="/img/post/20200825221349.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">往前走，向钱看</div></div><div class="info-2"><div class="info-item-1">...</div></div></div></a><a class="pagination-related" href="/posts/3456093329.html" title="接船经验"><img class="cover" src="/img/post/20200825222935.gif" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">接船经验</div></div><div class="info-2"><div class="info-item-1">接船，交船是一项比较繁杂且非常考验管理和人员技术能力的一件事，处理的好，可以顺利开航，否则发生滞航严重的将会对公司造成不可挽回的财产损失，对我们来说严重的可能会进黑名单，所以交接船千万需要慎重行事！不怕事无巨细，就怕麻痹大意！   一、接船前的准备工作得到接船任务后，轮机员特别是轮机长应及时到船技部门了解一下船舶的相关情况。主管人员会向接船船员介绍船舶的技术规范，接船时的注意事项，船舶需建立的基础工作，备件及物料如何申请，港口国检查等各方面对船舶的最新要求等等。轮机员应积极主动地向有接船经验的同行们虚心请教学习，或者在网上查询有关接船方面的内容，一个小小的建议或许就能让我们少走弯路。 船用机电设备随着社会发展和竞争有所变化或提高，不过有些发展中接近顶峰的东西不会再有太大的变化。新造船机电设备选型上无非就是那么几种，只不过是在原有基础上有所改进和完善，并进一步走向智能化，和我们以前工作过的船上设备的结构和原理大同小异，所以不必过于担心自己是否能够胜任。接船前期准备工作很重要，准备充分了我们就能做到心中有数，有的放矢，起到事半功倍作用，为顺利接好船打好基础，同时也减轻了心理压力。 ...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/483861191.html" title="阿法拉伐S&amp;P型分油机使用说明书（Operating Instructions）"><img class="cover" src="/img/post/20210201150327.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2021-02-01</div><div class="info-item-2">阿法拉伐S&amp;P型分油机使用说明书（Operating Instructions）</div></div><div class="info-2"><div class="info-item-1">Operating（使用）Before First Startup（首次使用前）必须将控制面板配置为适合系统组件。  检查防护罩是否正确组装，并连接到电压和频率正确的电源。控制面板必须打开。      开始之前，请完全组装防护罩。所有联轴器，外盖和防护罩必须安装到位并正确拧紧。否则可能会导致故障。                 installed and functioning correctly.检查紧急停车盒是否已正确安装并正常运行.                     机损危险            检查电源频率是否与设备铭牌标注的一致。如果不正确，则可能导致超速、机损。                        请在阿法拉伐指定的范围内使用此分离系统。否则可能会导致严重故障。         检查油底壳水平。如有必要，旋开水平尺塞，然后加满油，直到从注油孔开始放油为止。 油太多或太少都会损坏分油机轴承。        Rotation Direction（旋转方向）       使用I / O测试功能检查分离桶的旋转。请参阅1.12 I /...</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">旦暮灯</div><div class="author-info-description">每一个人都在与人生苦战</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">72</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://zhihu.com/people/wyz741525741" target="_blank" title="知乎"><i class="fab fa-zhihu" style="color: ffffff;"></i></a><a class="social-icon" href="https://weibo.com/qq741525741" target="_blank" title=""><i class="fab fa-weibo"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=741525741&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq" style="color: ffffff;"></i></a><a class="social-icon" href="mailto:yongzhi0507@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://cdn.jsdelivr.net/gh/wyz741525741/CND/img/20211006210748.jpg" target="_blank" title="wechat"><i class="fab fa-weixin" style="color: ffffff;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%B2%B9%E6%9C%BA%E5%87%BA%E6%B0%B4%E5%8F%A3%E8%B7%91%E6%B2%B9"><span class="toc-number">1.</span> <span class="toc-text">分油机出水口跑油</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%B2%B9%E6%9C%BA%E5%87%BA%E7%8E%B0%E5%BC%82%E5%B8%B8%E6%8C%AF%E5%8A%A8%E5%92%8C%E5%99%AA%E9%9F%B3"><span class="toc-number">2.</span> <span class="toc-text">分油机出现异常振动和噪音</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%B2%B9%E6%95%88%E6%9E%9C%E4%B8%8D%E4%BD%B3%E3%80%81%E5%88%86%E6%B2%B9%E6%95%88%E6%9E%9C%E4%B8%8D%E5%A5%BD"><span class="toc-number">3.</span> <span class="toc-text">分油效果不佳、分油效果不好</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E6%95%85%E9%9A%9C"><span class="toc-number">4.</span> <span class="toc-text">控制系统故障</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/483861191.html" title="阿法拉伐S&amp;P型分油机使用说明书（Operating Instructions）"><img src="/img/post/20210201150327.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="阿法拉伐S&amp;P型分油机使用说明书（Operating Instructions）"/></a><div class="content"><a class="title" href="/posts/483861191.html" title="阿法拉伐S&amp;P型分油机使用说明书（Operating Instructions）">阿法拉伐S&amp;P型分油机使用说明书（Operating Instructions）</a><time datetime="2021-02-01T06:56:55.000Z" title="发表于 2021-02-01 14:56:55">2021-02-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1515555783.html" title="阿法拉伐造水机海水泵更换机械密封"><img src="/img/post/20200927203445.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="阿法拉伐造水机海水泵更换机械密封"/></a><div class="content"><a class="title" href="/posts/1515555783.html" title="阿法拉伐造水机海水泵更换机械密封">阿法拉伐造水机海水泵更换机械密封</a><time datetime="2020-09-27T02:00:03.000Z" title="发表于 2020-09-27 10:00:03">2020-09-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1345941684.html" title="学海员之前，不看后悔一生！"><img src="/img/post/20200902190349.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="学海员之前，不看后悔一生！"/></a><div class="content"><a class="title" href="/posts/1345941684.html" title="学海员之前，不看后悔一生！">学海员之前，不看后悔一生！</a><time datetime="2020-09-01T14:48:59.000Z" title="发表于 2020-09-01 22:48:59">2020-09-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/669041207.html" title="锅炉拆检电子水位计及极低液位传感器（无图）"><img src="https://preview.cloud.189.cn/image/imageAction?param=A28D135B5346AF6EB376EDC17D5A9B9F7BBB5197EB6D8BCC393BF078F5996E9370363E284D8A41ECF540BF99F4CEDDA5CF4E5FEBDE4847C5B4B41B3ED76D7E757C38DABDA20BD100B827B414B807554999111FE6AC0B4EDD6FBE11D7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="锅炉拆检电子水位计及极低液位传感器（无图）"/></a><div class="content"><a class="title" href="/posts/669041207.html" title="锅炉拆检电子水位计及极低液位传感器（无图）">锅炉拆检电子水位计及极低液位传感器（无图）</a><time datetime="2020-08-10T10:28:04.000Z" title="发表于 2020-08-10 18:28:04">2020-08-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2841450072.html" title="是什么信念让你披星戴月地工作？"><img src="/img/post/20200825222226.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="是什么信念让你披星戴月地工作？"/></a><div class="content"><a class="title" href="/posts/2841450072.html" title="是什么信念让你披星戴月地工作？">是什么信念让你披星戴月地工作？</a><time datetime="2019-10-03T01:08:56.000Z" title="发表于 2019-10-03 09:08:56">2019-10-03</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/img/footer_img.avif);"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By 旦暮灯</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'forest'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = `%%{init:{ 'theme':'${theme}'}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (true) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  let initFn = window.walineFn || null
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = {"requiredMeta":["nick","mail"],"locale":{"placeholder":"无需登陆！！！但是昵称和邮箱为必填项！以确保可以收到回复邮件！"}}
+
+  const destroyWaline = ele => ele.destroy()
+
+  const initWaline = (Fn, el = document, path = window.location.pathname) => {
+    const waline = Fn({
+      el: el.querySelector('#waline-wrap'),
+      serverURL: 'waline.dmdusk.com',
+      pageview: false,
+      dark: 'html[data-theme="dark"]',
+      comment: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyWaline = () => {
+        destroyWaline(waline)
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const loadWaline = (el, path) => {
+    if (initFn) initWaline(initFn, el, path)
+    else {
+      btf.getCSS('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.css')
+        .then(() => import('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.js'))
+        .then(({ init }) => {
+          initFn = init || Waline.init
+          initWaline(initFn, el, path)
+          window.walineFn = initFn
+        })
+    }
+  }
+
+  if (isShuoshuo) {
+    'Waline' === 'Waline'
+      ? window.shuoshuoComment = { loadComment: loadWaline } 
+      : window.loadOtherComment = loadWaline
+    return
+  }
+
+  if ('Waline' === 'Waline' || !false) {
+    if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+    else setTimeout(loadWaline, 0)
+  } else {
+    window.loadOtherComment = loadWaline
+  }
+})()</script></div><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      const usePjax = true
+      false 
+        ? (usePjax ? pjax.loadUrl('/404.html') : window.location.href = '/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
